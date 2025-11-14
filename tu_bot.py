@@ -58,11 +58,3 @@ async def on_message(message):
 async def ping(ctx):
     await ctx.send("Pong! 🏓")
 
-# ----------------------------
-# Chạy bot
-# ----------------------------
-token = os.getenv("DISCORD_TOKEN")
-if not token:
-    print("❌ Thiếu biến môi trường DISCORD_TOKEN")
-else:
-    bot.run(token)
